@@ -10,7 +10,57 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+     <header>
+        <form action="./script.js" method="post">
+         <div>
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+         </div>
+         <div>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+         </div>
+         <div>
+            <label for="gender">Gender*</label>
+            <label for="gender_m">male</label>
+            <input type="radio" id="gender_m" name="gender" required>
+            <label for="gender_f">female</label>
+            <input type="radio" id="gender_f" name="gender" required>
+         </div>
+         <div>
+            <label for="cars">Car Brands*</label>
+            <select name="cars" id="cars" required>
+                <option value="--Please choose an option--">--Please choose an option--</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+         </div>
+         <div>
+            <label for="age">Age*</label>
+            <input type="number" id="age" name="age" min="0" max="150" placeholder="Age" required>
+         </div>
+         <div>
+            <label for="dob">DOB*</label>
+            <input type="date" id="dob" name="dob" required>
+         </div>
+         <div>
+            <label for="tel">Phone Number*</label>
+            <input type="tel" id="tel" name="tel" maxlength="10" placeholder="xxx-xxx-xxxx" required>
+         </div>
+         <div>
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" maxlength="10" placeholder="Password" required>
+         </div>
+         <div>
+            <label for="tos">I agree to the TOS*</label>
+            <input type="checkbox" id="tos" name="tos"  required>
+         </div>
+         <div>
+            <button type="submit">submit button</button>
+         </div>
+        </form>
+     </header>
 </body>
 
 </html>
